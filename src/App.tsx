@@ -1,5 +1,8 @@
 import React from 'react';
 import './styles/App.css'
+//images import ---
+
+
 function App() {
   return (
     <div className ='App'> 
@@ -14,7 +17,7 @@ function App() {
     <div className='App_content'>
       <div className='App_infoText'>
         <div className='featuresTitle'>Эмулятор партии в манчкин теперь в твоём кармане!</div>
-          <div className='featuresText'>Добро пожаловать, манчкин! Здесь ты найдёшь весь необохимый функционал для комфортной партии в твою любимую игру:</div>
+          <div className='featuresText'>Добро пожаловать, манчкин!<br/> Здесь ты найдёшь весь необохимый функционал для комфортной партии в твою любимую игру:</div>
             <ul className='featuresUl'>
               <li><b>Калькулятор боя</b>, для удобного подсчёта баффов и дебаффов;</li>
               <li><b>Список правил </b>по разделам для решения спорных ситуаций;</li>
@@ -24,9 +27,10 @@ function App() {
           </div>
       <div className='App_startContent'>
         <div className='App_startContent_startGame_button'>Начать партию</div>
-        <div className='App_startContent_startGame_img'></div>
+        <div className='App_startContent_startGame_img'><img className='img_appSample' src={'/images/appSample.jpg'} alt='appSample'/></div>
         <div className='App_startContent_startGame_bottomText'>*Функционал сохранения сессий доступен только после регистрации</div>
       </div>
+  
       </div>
       <footer>
         2022

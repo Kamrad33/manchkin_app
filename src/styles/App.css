@@ -4,6 +4,7 @@
     justify-content:space-between;
     background-color: rgba(84, 49, 40, 1);
     height: 100vh;
+    width: 100vw;
 }
 header {
     background-color: rgba(84, 49, 40, 1);
@@ -92,14 +93,21 @@ header {
     font-size: 50px;
     padding: 10px;
     display: flex;
+    word-wrap: break-word;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .App_startContent_startGame_img{
     background-color: aqua;
     height: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
+    border-radius: 25px;
+}
+.img_appSample{
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
 }
 .App_startContent_startGame_bottomText{
@@ -114,4 +122,133 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 920px) {
+   
+    .App{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: rgba(84, 49, 40, 1);
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header {
+        background-color: rgba(84, 49, 40, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        width: 100%;
+        height: auto;
+    }
+    .header_name {
+        color: rgba(255, 204, 1, 1);
+        margin:10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100%;
+        text-align: center;
+    }
+    .header_buttons {
+        color: rgba(255, 204, 1, 1);
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+    .btnHead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .App_content{
+        background-color: rgba(251, 234, 178, 1);
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;   
+                
+    }
+    .App_infoText{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 75vw;
+        color: rgba(84, 49, 40, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .featuresTitle{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        }
+        .featuresText{
+            margin-top: 25px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: start;
+            }
+        .featuresUl {
+            font-size: 25px;
+            text-align: start;
+        }
+    .App_startContent{
+        margin-right: 0px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .App_startContent_startGame_button{
+        color: rgba(255, 204, 1, 1);
+        background-color: rgba(84, 49, 40, 1);
+        border-radius: 25px;
+        font-size: 50px;
+        padding: 10px;
+        display: flex;
+        word-wrap: break-word;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .App_startContent_startGame_img{
+        background-color: aqua;
+        height: 320px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+    }
+    .img_appSample{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    .App_startContent_startGame_bottomText{
+        color: rgba(84, 49, 40, 0.5);
+        font-size: 14px;
+    }
+    
+    footer{
+        background-color: rgba(84, 49, 40, 1);
+        height: 15vh;
+        color: rgba(255, 204, 1, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
 }
