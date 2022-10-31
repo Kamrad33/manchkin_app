@@ -1,9 +1,10 @@
-import React from 'react';
-import './styles/App.css'
+import React, { useState } from 'react';
+import BattleCalculator from './components/BattleCalculator';
+import './styles/App.scss';
 //images import ---
 
-
 function App() {
+  const [calculatorPage, setCalculatorPage] = useState(true);
   return (
     <div className ='App'> 
       <header>
@@ -15,6 +16,7 @@ function App() {
         </div>
       </header>
     <div className='App_content'>
+      {calculatorPage && <BattleCalculator />}
       <div className='App_infoText'>
         <div className='featuresTitle'>Эмулятор партии в манчкин теперь в твоём кармане!</div>
           <div className='featuresText'>Добро пожаловать, манчкин!<br/> Здесь ты найдёшь весь необохимый функционал для комфортной партии в твою любимую игру:</div>
